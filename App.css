@@ -412,7 +412,7 @@ form button{
   justify-content: space-between;
 }
 /* media queries for nav and home components */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
   /* navbar */
   .navbar{
     padding: 0.5rem;
