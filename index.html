@@ -8,12 +8,11 @@
   <meta name="theme-color" content="#000000" />
   <meta name="description" content="My portfolio website." />
   <link rel="stylesheet" href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css" />
-  <!-- <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" /> -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <script src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js">
   </script>
   <title>Mohd. Yunus | Web-Developer</title>
-  <link rel="stylesheet" href="App.css">
+  <link rel="stylesheet" href="index.css">
 </head>
 
 <body>
@@ -30,7 +29,7 @@
             <li class='hovers' id="projects"><a href='#project'>Projects</a> </li>
             <li class='hovers' id="skills"><a href='#Skills'>skills</a> </li>
             <li class='hovers' id="contact"><a href='#bottom'>Contact</a> </li>
-            <button class='hovers' id="resume-button-1" onclick="downloadresume()">resume</button>
+            <button class='hovers' id="resume-button-1" onclick="downloadresume()">Resume</button>
             <!-- <li class='hovers' id="resume-button-1"><a  target="_blank" href='https://drive.google.com/file/d/1d_QolGNWL6GLQRNBmnJ88ZH2aM-WwbjG/view?usp=share_link
               'onclick="downloadresume()" >Resume</a> </li> -->
           </ul>
@@ -69,14 +68,21 @@
             </ul>
           </div>
         </div>
-        <div class="mobile-menu">
-          <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" height="1em" width="1em"
-            xmlns="http://www.w3.org/2000/svg">
-            <path
-              d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z">
-            </path>
-          </svg>
-        </div>
+
+          <div class="mobile-menu ">
+            <i class="fa-solid fa-bars"></i>
+            <i class="fa-solid fa-xmark"></i>
+          </div>
+          <div class="dropdown">
+            <ul class="navvs">
+              <li class='hovers' id="home"> <a href='#Homeid'>Home</a> </li>
+              <li class='hovers about section' id="about"> <a href='#About'>About</a> </li>
+              <li class='hovers' id="projects"><a href='#project'>Projects</a> </li>
+              <li class='hovers' id="skills"><a href='#Skills'>skills</a> </li>
+              <li class='hovers' id="contact"><a href='#bottom'>Contact</a> </li>
+              <button class='hovers' id="resume-button-1" onclick="downloadresume()">Resume</button>
+            </ul>
+          </div>
       </div>
 
       <section id="home" class="nav-link home">
@@ -93,7 +99,7 @@
                 <a href="#bottom">Get In Touch</a>
               </div>
               <div class="button">
-                <button id="resume-button-2" onclick="downloadresume()">resume</button>
+                <button id="resume-button-2" onclick="downloadresume()">Resume</button>
                 <!-- <a class='resumebtn'id="resume-button-2" href="https://drive.google.com/file/d/1d_QolGNWL6GLQRNBmnJ88ZH2aM-WwbjG/view?usp=share_link"  target="_blank" onclick="downloadresume()">Resume</a> -->
               </div>
             </div>
@@ -341,31 +347,22 @@
 
           </div>
         </div>
-        <div class="project-card">
-
-        </div>
+        
       </section>
-      <div style="display:flex;flex-direction: column;margin: auto;width: 70%;">
-        <h1 style="color:white;text-align: center;">Github</h1>
-        <img width="60%" id="github-top-langs"
-          src="https://github-readme-stats.vercel.app/api/top-langs/?username=Yunuslala&theme=black&layout=compact"
-          alt="Yunuslala">
-        <img width="60%" id="github-stats-card"
+      <div class="gitcal">
+        <h1 style="color:white;text-align:center; width: 100%;">Github</h1>
+        <div id="gitimg">
+          <img width="50%" id="github-stats-card"
           src="https://github-readme-stats.vercel.app/api?username=Yunuslala&show_icons=true&locale=en&theme=default&layout=compact"
           alt="Yunuslala">
-        <img width="60%" id="github-streak-stats"
+          <img width="50%" id="github-top-langs"
+          src="https://github-readme-stats.vercel.app/api/top-langs/?username=Yunuslala&theme=black&layout=compact"
+          alt="Yunuslala">
+        <img width="50%" id="github-streak-stats"
           src="https://github-readme-streak-stats.herokuapp.com?user=Yunuslala&theme=default&layout=compact"
           alt="Yunuslala">
-
-        <div class="calendar react-activity-calendar" style="color:white">
-          <!-- Loading stuff -->
-          Loading the data just for you.
         </div>
-        <!-- <img id="" src="" alt="Yunuslala"> -->
       </div>
-      <!-- projects section -->
-
-      <!-- contact section -->
       <section id="contact" class="nav-link contact">
         <div id="bottom" class="Bottom">
           <div class="free">

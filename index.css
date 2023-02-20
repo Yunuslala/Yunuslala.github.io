@@ -5,9 +5,29 @@
   padding: 0;
   box-sizing: border-box;
 }
+#resume-button-2{
+  background: none;
+  color: #75b3be;
+  font-size: 1.2rem;
+  border: none;
+}
+#resume-button-1{
+  color: #ffff;
+  background: none;
+  font-size: 22px;
+  text-align: center;
+  margin-top: -7.5px;
+  /* border: 1px solid red; */
+}
+
 .App{
   background-color: #111;
   min-height: 100vh;
+}
+#gitimg{
+  margin-top: 60px;
+  display: flex;
+  justify-content: space-evenly;
 }
 /* nav component */
 .navbar{
@@ -188,6 +208,10 @@ grid-gap: 30px;
 margin-top: 30px;
 margin-left: 10px;
 }
+.show{
+  background-color: red;
+  display: block;
+}
 #iconOfstach{
   height: 180px;
   width: 180px;
@@ -195,6 +219,14 @@ margin-left: 10px;
   background-color: white;
   box-shadow: rgba(255, 255, 255, 0.35) 0px 5px 15px;
 }
+.dropdown{
+  /* display: none; */
+        /* border: 1px solid rebeccapurple; */
+        display: none;
+       
+
+}
+
 #iconOfstach>img{
   border-radius: 25px;
 }
@@ -433,6 +465,17 @@ form button{
   .menu .navvs li{
     margin: 3rem;
   }
+  #gitimg{
+    display: grid;
+    border: 1px solid red;
+    text-align: center;
+  }
+  .gitcal{
+    width: 100%;
+    text-align: center;
+    border: 1px solid red;
+    align-items: center;
+  }
   .menu.active{
     background-color: #111;
     left: 0;
@@ -443,7 +486,43 @@ form button{
   }
   .mobile-menu{
     display: block;
+    
   }
+  .dropdown{
+    display: none;
+    width: 20%;
+    position: absolute;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 10px;
+    font-size: 20px;
+    top: 50px;
+    right: 0px;
+    transform: translateX(100%);
+    transition: all 0.5s linear;
+  }
+  .navvs{
+    display: flex;
+    flex-direction: column;
+  }
+  .active .mobile-menu>i:nth-child(2) {
+    display: block;
+    color: #fff;
+}
+ .mobile-menu>i:nth-child(2) {
+  display: none;
+}
+
+.active .dropdown{
+  transform: translateX(0);
+  /* right: 100px; */
+}
+.active .mobile-menu>i:nth-child(1) {
+    display: none;
+}
   /* home */
   .home{
     min-height: 100vh;
