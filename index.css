@@ -76,7 +76,7 @@ li, .logo{
 }
 .socials{
   margin-left: 1.3rem;
-  background-color: grey;
+  /* background-color: grey; */
   padding: 3px 30px;
   border-radius: 20px;
 
@@ -135,7 +135,7 @@ li, .logo{
 
 .tagline{
   margin-top: 1.3rem;
-  color: rgb(168, 158, 158);
+  /* color: rgb(168, 158, 158); */
   font-size: 1.2rem;
 }
 .button{
@@ -282,7 +282,7 @@ transition: 3s;
   flex-direction: column;
 }
 .Project .head .projectsIntro{
-  color: grey;
+  /* color: grey; */
   font-size: 1.2rem;
   margin-top: 0.5rem;
 }
@@ -307,23 +307,23 @@ transition: 3s;
 }
 .Project .container .projs .projinfo{
   font-size: 1rem;
-  color: grey;
+  color: #ffffff;
   padding: 0.2rem 0.5rem;
 }
 .Project a{
   margin: 0.6rem;
-  border: 1px solid #75b3be;
+  border: 1px solid  rgb(117, 179, 190);
   padding: 0.5rem;
   font-size: 1rem;
 }
 .Project a:hover{
-  background-color: #75b3be;
+  background-color: rgb(117, 179, 190);
   transition: all 0.5s ease;
 }
 .Project .moreprojs{
   font-size: 1.5rem;
   text-align: center;
-  color: grey;
+  color: white;
   margin: 1rem;
   line-height: 2;
 }
