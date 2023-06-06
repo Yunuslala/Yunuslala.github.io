@@ -20,7 +20,11 @@
   margin-top: -7.5px;
 
 }
-
+.home-img{
+  object-fit: cover;
+  width: auto;
+  
+}
 .App{
   background-color: #111;
   min-height: 100vh;
@@ -168,8 +172,10 @@ li, .logo{
   justify-content: space-around;
 }
 .imageme img{
-  object-fit: contain;
+  object-fit: cover;
   border-radius: 8px;
+  padding-top: 5px;
+  object-position: top;
 }
 .abouttext{
   margin: 0 3rem;
