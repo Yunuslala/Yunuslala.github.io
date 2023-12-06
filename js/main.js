@@ -64,7 +64,9 @@ function transform_hamburger() {
 //! ============= resume button ==========
 document.getElementById("resume-link-1").onclick = () => {
     https://drive.google.com/file/d/1FXVtcE5kY6zk96gH4ZvB6WDQ_fewf0Uy/view
-    window.open("https://drive.google.com/file/d/1FXVtcE5kY6zk96gH4ZvB6WDQ_fewf0Uy/view");
+    window.open("https://drive.google.com/file/d/18iCr6DTKGB1r_P736sZToBkTGxngLHo2/view");
+
+
 }
 // document.getElementById("resume-link-2").onclick = () => {
 
